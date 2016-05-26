@@ -44,7 +44,7 @@ import static android.os.Build.VERSION_CODES.GINGERBREAD;
 import static android.os.Build.VERSION_CODES.HONEYCOMB;
 import static android.os.Build.VERSION_CODES.HONEYCOMB_MR1;
 import static android.os.Process.THREAD_PRIORITY_BACKGROUND;
-import static android.provider.Settings.System.AIRPLANE_MODE_ON;
+//import static android.provider.Settings.System.AIRPLANE_MODE_ON;
 import static com.squareup.picasso.Picasso.TAG;
 import static java.lang.String.format;
 
@@ -295,7 +295,7 @@ final class Utils {
     // Target ~15% of the available heap.
     return (int) (1024L * 1024L * memoryClass / 7);
   }
-
+/*
   static boolean isAirplaneModeOn(Context context) {
     ContentResolver contentResolver = context.getContentResolver();
     try {
@@ -309,6 +309,7 @@ final class Utils {
       return false;
     }
   }
+  */
 
   @SuppressWarnings("unchecked")
   static <T> T getService(Context context, String service) {
